@@ -124,5 +124,29 @@ Declaring a pure function
     return a * b;
     }
 
-## Keccak256 and Typecasting
-Keccak256 is a built in hash function to generate random 256 bit hexadecimal numbers
+## Keccak256
+Keccak256 (A version of SHA3) is a built in hash function to generate random 256 bit hexadecimal numbers.
+
+Small changes in input will generate a large change in the hash
+
+keccak256 expects a single parameter of type **byte**
+
+
+    keccak256(abi.encodePacked("aaaab"));
+    // 6e91ec6b618bb462a4a6ee5aa2cb0e9cf30f7a052bb467b0ba58b8748c00d2e5
+    
+    keccak256(abi.encodePacked("aaaac"));
+    //b1f078126895a1424524de5321b339ab00408010b7cf0e6ed451514981e58aa9
+
+## Typecasting
+Converting data between the various data types
+
+    uint8 a = 5;
+    uint b = 6;
+
+    // throws an error because a * b returns a uint, not uint8:
+    uint8 c = a * b;
+
+    // we have to typecast b as a uint8 to make it work:
+    uint8 c = a * uint8(b);
+
