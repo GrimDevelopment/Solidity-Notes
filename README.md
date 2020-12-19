@@ -10,7 +10,7 @@ Think of contracts as classes. All the below are within the contract (or class)
         - uint (uint8, uint16, uint32, etc.. ) = unsigned integer (Non-Negative Number)
         - int = signed integer
 
-# Math Operations:
+# Math Operations
 Addition:
     x + y
 Subtraction:
@@ -24,10 +24,10 @@ Modulus / Remainder:
 Exponential Operator (i.e. "x to the power of y", x^y):
     uint x = 5 ** 2; (equal to 5^2 = 25)
 
-# Structure:
+# Structure
 Used for complex data with multiple properties
 
-# Arrays:
+# Arrays
 Collection of something (fixed and dynamic arrays)
 
     // Array with a fixed length of 2 elements:
