@@ -11,18 +11,18 @@ Think of contracts as classes. All the below are within the contract (or class)
         - int = signed integer
 
 # Math Operations
-Addition:
-    x + y
-Subtraction:
-    x - y
-Multiplication:
-    x * y
-Division:
-    x / y
-Modulus / Remainder:
-    x % y (for example: 13 % 5 is 3, because if you divide 5 into 13, ~3 is the remainder))
-Exponential Operator (i.e. "x to the power of y", x^y):
-    uint x = 5 ** 2; (equal to 5^2 = 25)
+    Addition
+        x + y
+    Subtraction:
+        x - y
+    Multiplication:
+        x * y
+    Division:
+        x / y
+    Modulus / Remainder:
+        x % y (for example: 13 % 5 is 3, because if you divide 5 into 13, ~3 is the remainder))
+    Exponential Operator (i.e. "x to the power of y", x^y):
+        uint x = 5 ** 2; (equal to 5^2 = 25)
 
 # Structure
 Used for complex data with multiple properties
