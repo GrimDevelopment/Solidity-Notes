@@ -1,5 +1,4 @@
-pragma solidity ^0.4.25;
-
+pragma solidity  >=0.5.0 <0.6.0;
 contract ZombieFactory {
 
     uint dnaDigits = 16;
@@ -20,5 +19,11 @@ contract ZombieFactory {
         uint rand = uint(keccak256(abi.encodePacked(_str)));
         return rand % dnaModulus;
     }
+    
+    function createRandomZombie(string memory _name) public {
+        uint randDna = _generateRandomDna(_name);
+        _createZombie(_name, randDna);
+    }
+
 }
 
