@@ -1,9 +1,11 @@
-State Variables:
+# Notes white going through the https://cryptozombies.io tutorials
+
+# State Variables
     Written to blockchain permanently
         - uint (uint8, uint16, uint32, etc.. ) = unsigned integer (Non-Negative Number)
         - int = signed integer
 
-Math Operations:
+# Math Operations:
     Addition:
         x + y
     Subtraction:
@@ -17,10 +19,10 @@ Math Operations:
     Exponential Operator (i.e. "x to the power of y", x^y):
         uint x = 5 ** 2; (equal to 5^2 = 25)
 
-Structure:
+# Structure:
     Used for complex data with multiple properties
 
-Arrays:
+# Arrays:
     Collection of something (fixed and dynamic arrays)
         // Array with a fixed length of 2 elements:
         uint[2] fixedArray;
@@ -28,3 +30,5 @@ Arrays:
         string[5] stringArray;
         // a dynamic Array - has no fixed size, can keep growing:
         uint[] dynamic array
+
+# Function Declorations
