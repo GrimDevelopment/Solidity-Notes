@@ -75,3 +75,7 @@ By value, which means that the Solidity compiler creates a new copy of the param
 
 By reference, which means that your function is called with a... reference to the original variable. Thus, if your function changes the value of the variable it receives, the value of the original variable gets changed.
 
+## Working with Structs and Arrays
+
+### Creating New Structs
+
