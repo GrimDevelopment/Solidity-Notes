@@ -6,8 +6,8 @@ Think of contracts as classes. All the below are within the contract (or class)
 
 
 # State Variables
-        - uint (uint8, uint16, uint32, etc.. ) = unsigned integer (Non-Negative Number)
-        - int = signed integer
+    uint (uint8, uint16, uint32, etc.. ) = unsigned integer (Non-Negative Number)
+    int = signed integer
 
 # Math Operations
     // Addition
