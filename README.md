@@ -1,15 +1,15 @@
-## Solidity Notes
+# Solidity Notes
 Notes white going through the [CryptoZombies](https://cryptozombies.io) tutorials
 
 ** Note **
 Think of contracts as classes. All the below are within the contract (or class)
 
 
-# State Variables
+## State Variables
     uint (uint8, uint16, uint32, etc.. ) = unsigned integer (Non-Negative Number)
     int = signed integer
 
-# Math Operations
+## Math Operations
     // Addition
         x + y
     // Subtraction
@@ -23,10 +23,10 @@ Think of contracts as classes. All the below are within the contract (or class)
     // Exponential Operator (i.e. "x to the power of y", x^y):
         uint x = 5 ** 2; (equal to 5^2 = 25)
 
-# Structure
+## Structure
 Used for complex data with multiple properties
 
-# Arrays
+## Arrays
 Collection of something (fixed and dynamic arrays)
 
     // Array with a fixed length of 2 elements:
@@ -38,7 +38,7 @@ Collection of something (fixed and dynamic arrays)
     // a dynamic Array - has no fixed size, can keep growing:
     uint[] dynamic array
 
-# Function Declorations
+## Function Declorations
 
 Function Example:
 
