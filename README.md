@@ -77,5 +77,24 @@ By reference, which means that your function is called with a... reference to th
 
 ## Working with Structs and Arrays
 
-### Creating New Structs
+Creating and pushing zombie to the array in one line
 
+```solidity
+zombies.push(Zombie(_name, _dna));
+```
+
+
+## Private/Public Functions
+Solidity functions are PUBLIC by default. This means that anyone can call the function and execute its code.
+
+With that in mind, it is good practice to make your functions PRIVATE by default and PUBLIC only when desired.
+
+```solidity
+// Private Function
+
+uint[] numbers;
+
+function _addToArray(uint number) private {
+    numbers.push(_number);
+}
+```
