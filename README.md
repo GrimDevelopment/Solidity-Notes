@@ -84,11 +84,12 @@ zombies.push(Zombie(_name, _dna));
 ```
 
 
-## Private/Public Functions
+## Types of functions Functions
 Solidity functions are PUBLIC by default. This means that anyone can call the function and execute its code.
 
 With that in mind, it is good practice to make your functions PRIVATE by default and PUBLIC only when desired.
 
+### Private Functions
 ```solidity
 // Private Function
 
@@ -98,3 +99,43 @@ function _addToArray(uint number) private {
     numbers.push(_number);
 }
 ```
+
+### Public Functions
+```solidity
+// Public Function
+
+uint[] numbers;
+
+function _addToArray(uint number) public {
+    numbers.push(_number);
+}
+```
+### Returning values from functions
+```solidity
+string greeting = "What's up dog";
+
+function sayHello() public returns (string memory) {
+  return greeting;
+}
+```
+
+### View Functions
+Since the above only returns values (rather than modifying values), the function is called a "View" function.
+
+Declaring a view function:
+
+```solidity
+function sayHello() public view returns (string memory) {
+```
+
+### Pure Functions
+Pure functions are functions that only return values values without reading from the state of the app
+
+Declaring a pure function
+
+```solidity
+function _multiply(uint a, uint b) private pure returns (uint) {
+  return a * b;
+}
+```
+
