@@ -1,4 +1,5 @@
-# Notes white going through the https://cryptozombies.io tutorials
+## Solidity Notes
+Notes white going through the [CryptoZombies](https://cryptozombies.io) tutorials
 
 # State Variables
     Written to blockchain permanently
