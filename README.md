@@ -26,12 +26,10 @@ Think of contracts as classes. All the below are within the contract (or class)
 ## Structure
 Used for complex data with multiple properties
 
-```solidity
-struct Zombie {
-    string name;
-    uint dna;
-}
-```
+    struct Zombie {
+        string name;
+        uint dna;
+    }
 
 ## Arrays
 Collection of something (fixed and dynamic arrays)
@@ -52,22 +50,18 @@ Collection of something (fixed and dynamic arrays)
 
 Function Example:
 
-```solidity
-function eatHamburgers(string memory _name, uint _amount) public {
+    function eatHamburgers(string memory _name, uint _amount) public {
 
-}
+    }
 
-// function - declares function
-// eatHamburgers - function name
-// memory - Where the variable data is stored
-// public - the visibility of the functions
-```
+    // function - declares function
+    // eatHamburgers - function name
+    // memory - Where the variable data is stored
+    // public - the visibility of the functions
 
 Calling the function:
 
-```solidity
-eatHamburgers("vitalik", 100);
-```
+    eatHamburgers("vitalik", 100);
 
 Ways to pass an argument:
 
@@ -79,10 +73,7 @@ By reference, which means that your function is called with a... reference to th
 
 Creating and pushing zombie to the array in one line
 
-```solidity
-zombies.push(Zombie(_name, _dna));
-```
-
+    zombies.push(Zombie(_name, _dna));
 
 ## Types of functions Functions
 Solidity functions are PUBLIC by default. This means that anyone can call the function and execute its code.
@@ -90,52 +81,48 @@ Solidity functions are PUBLIC by default. This means that anyone can call the fu
 With that in mind, it is good practice to make your functions PRIVATE by default and PUBLIC only when desired.
 
 ### Private Functions
-```solidity
-// Private Function
+    // Private Function
 
-uint[] numbers;
+    uint[] numbers;
 
-function _addToArray(uint number) private {
-    numbers.push(_number);
-}
-```
+    function _addToArray(uint number) private {
+        numbers.push(_number);
+    }
 
 ### Public Functions
-```solidity
-// Public Function
+    // Public Function
 
-uint[] numbers;
+    uint[] numbers;
 
-function _addToArray(uint number) public {
-    numbers.push(_number);
-}
-```
+    function _addToArray(uint number) public {
+        numbers.push(_number);
+    }
 ### Returning values from functions
-```solidity
-string greeting = "What's up dog";
+    string greeting = "What's up dog";
 
-function sayHello() public returns (string memory) {
-  return greeting;
-}
-```
+    function sayHello() public returns (string memory) {
+    return greeting;
+    }
 
 ### View Functions
 Since the above only returns values (rather than modifying values), the function is called a "View" function.
 
 Declaring a view function:
 
-```solidity
-function sayHello() public view returns (string memory) {
-```
+
+    function sayHello() public view returns (string memory) {
+        
+    }
 
 ### Pure Functions
 Pure functions are functions that only return values values without reading from the state of the app
 
 Declaring a pure function
 
-```solidity
-function _multiply(uint a, uint b) private pure returns (uint) {
-  return a * b;
-}
-```
 
+    function _multiply(uint a, uint b) private pure returns (uint) {
+    return a * b;
+    }
+
+## Keccak256 and Typecasting
+Keccak256 is a built in hash function to generate random 256 bit hexadecimal numbers
