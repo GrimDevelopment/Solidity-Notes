@@ -47,6 +47,9 @@ Collection of something (fixed and dynamic arrays)
 
 ## Function Declorations
 
+** By convention, local variables start with an underscore (ie: _name) to differentiate between global variables.
+
+
 Function Example:
 
 ```solidity
@@ -60,6 +63,11 @@ function eatHamburgers(string memory _name, uint _amount) public {
 // public - the visibility of the functions
 ```
 
+Calling the function:
+
+```solidity
+eatHamburgers("vitalik", 100);
+```
 
 Ways to pass an argument:
 
@@ -67,10 +75,3 @@ By value, which means that the Solidity compiler creates a new copy of the param
 
 By reference, which means that your function is called with a... reference to the original variable. Thus, if your function changes the value of the variable it receives, the value of the original variable gets changed.
 
-** By convention, local variables start with an underscore (ie: _name) to differentiate between global variables.
-
-Calling the function:
-
-```solidity
-eatHamburgers("vitalik", 100);
-```
