@@ -47,10 +47,10 @@ function eatHamburgers(string memory _name, uint _amount) public {
 
 }
 ```
-function - declares function
-eatHamburgers - function name
-memory - Where the variable data is stored
-public - the visibility of the functions
+    function - declares function
+    eatHamburgers - function name
+    memory - Where the variable data is stored
+    public - the visibility of the functions
 
 Ways to pass an argument:
 
