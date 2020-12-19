@@ -26,6 +26,13 @@ Think of contracts as classes. All the below are within the contract (or class)
 ## Structure
 Used for complex data with multiple properties
 
+```solidity
+struct Zombie {
+    string name;
+    uint dna;
+}
+```
+
 ## Arrays
 Collection of something (fixed and dynamic arrays)
 

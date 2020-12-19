@@ -5,8 +5,8 @@ contract ZombieFactory {
     uint dnaModulus = 10 ** dnaDigits;
 
     struct Zombie {
-    string name;
-    uint dna;
+        string name;
+        uint dna;
     }
 
     Zombie[] public zombies;
